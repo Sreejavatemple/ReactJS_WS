@@ -1,0 +1,531 @@
+
+1) Introduction to ReactJS 
+
+	
+2) Virtual DOM in ReactJS
+
+
+3) Environmental Setup for ReactJS
+
+
+4) Components
+
+	Functional Level Components
+	
+		useState
+
+		useEffect
+
+		useRef
+
+		useSelecctor
+
+		useDispatch
+
+	Class Level Components
+
+		- life cycle hooks
+
+
+
+5) Single Page Applications
+
+	- Routing in Single Page Applications
+
+
+
+6) Rest API Calls
+
+	"axios" module
+
+
+7) MERN Stack Development
+
+	M - MongoDB
+
+	E - ExpressJS
+
+	R - ReactJS
+
+	N - NodeJS
+
+
+8) Middlewares in ReactJS
+
+	=> Redux
+
+	=> redux-thunk
+
+	=> redux-saga
+
+
+9) Forms with Validations
+
+
+
+
+10) AWS Deployment
+
+
+
+11) Spring Boot Integration
+
+
+12) Material UI
+
+
+				***** Introduction to ReactJS *****
+
+	- ReactJS is the JavaScript library.
+
+	- ReactJS used to develop the web applications.
+
+	- we will develop ReactJS Applications in two ways.
+
+			1) JSX
+
+				=> JavaScript and XML
+
+				=> JSX Won't follows the OOPS
+
+			2) TypeScript
+
+				=> Programming Language
+
+				=> Microsoft
+
+				=> TypeScript follows the OOPS.
+
+
+	- Babel is the inbuilt tool of ReactJS, used to convert the "JSX" or "TypeScript" to Equalent
+          "JS"
+
+	- React simplefies the complex UI to multiple reusable portions of Web Applications.
+
+	- Each Reusable Portion technically called as Component.
+
+	- As a React Developer, we can create more than one Component.
+	
+	- As a React Developer, we can provide communication between Components.
+
+Environmental Setup
+-------------------
+
+	=> download and install NodeJS
+
+		- "npm"   (node packaging manager)
+
+			=> npm supports to install ReactJS.
+
+		- "npx"   (node packaging runner)
+
+			=> helps to provide the environment toexecute the React Applications
+
+
+	website : https://nodejs.org/en/download/
+
+	file    : node-v14.15.3-x64.msi
+
+
+
+	=> install "create-react-app" tool
+
+		"create-react-app" tool provided by facebook.
+
+		"create-react-app" tool, used to create the react applications.
+		
+		we will install with the helps of npm tool
+
+
+		> npm install -g create-react-app
+
+		
+		"-g" stands for global installation
+
+		
+	
+	=> install yarn tool
+
+		- used to download the 3rd party modules
+
+		> npm install -g yarn
+
+	=> VisualStudioCode
+
+
+steps to create the react application
+
+
+1) create the directory
+
+
+2) create the react application with typescript environment
+
+	> npx create-react-app first-app --template typescript
+
+	- where "first-app" is the name of the react application
+
+
+3) switch to react application
+
+	> cd first-app
+
+
+4) execute the react application
+
+
+	> yarn start
+
+		- default port no of react application is 3000
+
+
+
+Component
+---------
+	- Reusable Portion of complex UI Called as Component.
+
+	- As a React Developer, we can create more than one component.
+
+	- As a React Developer we can provide communication between one component to another component.
+
+	- we have two types of components.
+
+			1) functional level component
+
+			2) class level component
+
+
+functional level component
+--------------------------
+
+****************************************************
+first-app
+       src
+	     First.tsx
+
+		 index.tsx
+	   public
+	   	 index.html
+****************************************************
+
+Material UI
+-----------
+	- Material UI is the framework, used to implement the "Rich UI" to Web Applications.
+
+	- we will install Material UI by using following command.
+
+
+	> yarn add @material-ui/core @material-ui/icons --save
+
+
+
+
+
+props
+-----
+	- props is the predefined object available in ReactJS.
+
+	- props used to receive the data from target component.
+
+
+************************************************************
+props-app
+        src
+		  First.tsx
+		  Second.tsx     (props)
+
+		  index.tsx
+
+		public
+			index.html
+*********************************************************************
+
+
+state
+-----
+	- state used to represent the component data.
+
+	- useState() is the life cycle hook, used to maintain the "state of component".
+
+
+************************************************************************
+state-app
+        src
+          State.tsx
+
+		  index.tsx
+
+		public
+			index.html
+***********************************************************************
+
+
+Rest API Calls
+--------------
+
+	- "axios" is the module, used to make the rest api calls.
+
+	> yarn add axios @types/axios --save
+
+	- useEffect() life cycle hook used to make the rest api calls
+
+
+URL : http://restcountries.eu/rest/v2/all
+
+
+
+Login Authentication
+====================
+
+DataBase ===>  MongoDB
+
+Server   ===>  Node Server
+
+Rest Services ===>  ExpressJS
+
+Client Applications  : React Application
+
+
+
+Step 1.
+	create the database in MongoDB
+
+	URL : https://www.mongodb.com/cloud/atlas
+
+
+	databasename : workshop
+
+	table name (collection name) : login_details
+
+	username : admin
+
+	password : admin
+
+
+	Connection URL : mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/workshop?retryWrites=true&w=majority
+
+
+Step 2.
+	create the server directory
+
+	Ex.
+		server
+
+Step 3.
+	download node modules to implement server
+
+
+	=> express
+
+	=> mongodb
+
+	=> cors
+
+	=> body-parser
+	
+		- express module used to develop the rest services
+
+		Ex.
+				GET
+				POST
+				PUT
+				DELETE
+				---
+				---
+				---
+
+		- mongodb module used to connect to mongodb database.
+
+		- cors module used to enable the "cors" policy
+
+		- body-parser module used to read the data from client application
+
+
+		> yarn add express mongodb body-parser cors --save
+
+
+Step 4.
+	create the node server file
+
+	Ex.
+		server.js
+
+Step 5.
+	deploy node application to AWS	
+
+
+	=> create the gitignore file
+
+	> npx gitignore node
+
+	=> move "server" to the "GitHub"
+
+
+	> git init
+
+	> git add .
+
+	> git commit -m "server created"
+
+	> git remote add origin https://github.com/toolsknowledge/server.git
+
+	> git push -u origin master
+
+
+	=> deploy our application (server repository) to AWS
+
+
+	URL : WorkshopServer-env.eba-byvxzayd.ap-south-1.elasticbeanstalk.com/login (POST)
+
+Step 6.
+	create the react application
+
+	=> "axios" module used to make the "rest api" calls
+
+	> yarn add axios @types/axios --save
+
+
+
+	> npx create-react-app login-app --template typescript
+
+
+******************************************
+login-app
+        src
+		  Login.tsx
+
+		  index.tsx
+
+		public
+			index.html
+********************************************
+
+
+							***** Single Page Application *****
+
+		- Loading one Component to Another Component without refreshing the whole webpage called as Single Page Application.
+
+		- navigation of components technically called as "Routing".
+
+		- we will implement Single Page Applications by using "react-router-dom" module.
+
+		- we will download "react-router-dom" module by using "yarn" tool.
+
+		> yarn add react-router-dom @types/react-router-dom --save
+
+
+***********************************
+spa-demo
+       src
+	     Mean.tsx
+		 Mern.tsx
+		 Mevn.tsx
+
+		 Main.tsx
+
+		 index.tsx
+	   public
+	   	  index.html
+***********************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
