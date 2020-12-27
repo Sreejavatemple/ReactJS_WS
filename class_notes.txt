@@ -497,6 +497,168 @@ URLS
 
 
 
+Integration of Redux to React    (React-Redux Example)
+-------------------------------------------------------
+
+1) redux
+
+  react-redux
+
+
+
+2) create the reducer
+
+
+**************************************
+react-redux-ex
+             src
+			   reducer
+			      reducer.jsx
+*************************************
+
+
+3) create the store, and deploy the reducer and make availablility of store to component
+
+	index.js
+
+4) perform the dispatch & subscribe action
+
+	App.jsx
+
+
+Thunk
+-----
+1) redux
+   react-redux
+   redux-thunk
+
+
+2) create the reducer
+
+	******************************************
+	thunk-app
+			src
+			  reducer 
+			      reducer.js
+	*****************************************
+
+
+3) create the actions
+
+	******************************************
+	thunk-app
+	        src
+			  actions
+			      actions.js
+	*****************************************
+
+
+4) create the store, deploy the reducer and make the availablility to App component
+
+	index.js
+
+
+5) implement the App component
+
+
+
+
+
+
+Saga
+----
+	1) download the modules
+
+			=> redux
+
+			=> react-redux
+
+			=> redux-saga
+
+
+			- yarn add redux react-redux redux-saga --save
+
+Step 2.
+	create the reducer
+
+	**************************
+	saga-app
+	       src
+		     reducer
+			    reducer.js
+	*************************
+
+3) manipilate the actions
+
+	******************************
+	saga-app
+	      src
+		    saga
+			   saga.js
+	*****************************
+
+4) create the store and deploy the reducer and make the availablility to App component
+
+	index.js
+
+5) create the Component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																			    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
