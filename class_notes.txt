@@ -429,6 +429,86 @@ spa-demo
 ***********************************
 
 
+Token Based Authentication System
+----------------------------------
+
+1)
+
+	database_name : ecommerce
+
+	collections_name : login_details
+							1) uname
+							2) upwd
+
+					   products 
+					   		1) id
+							2) category
+							3) name
+							4) price
+							5) quantity
+							6) image
+							7) images
+							8) description
+
+
+	username : admin
+
+	password : admin
+
+	Connection URL : mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/ecommerce?retryWrites=true&w=majority
+
+
+
+2) implement the node server
+
+	=> express
+	      - rest services
+		  		Ex.
+				  	GET
+					POST
+					PUT
+					DELETE
+					HEAD
+	=> mongodb
+		 - connect to mongodb database
+
+	=> cors
+		- enable the cors policy
+
+	=> body-parser
+		- read the data from client application
+
+	=> jwt-simple
+		- generate the token
+
+
+
+	=> yarn add express mongodb cors body-parser jwt-simple --save
+
+
+
+URLS
+----
+
+	=> http://localhost:8080/login   (POST)
+
+	=> http://localhost:8080/category/ac   (GET)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
